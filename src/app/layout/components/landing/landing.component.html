@@ -7,13 +7,13 @@
       <div class="align-items-center surface-0 flex-grow-1 justify-content-between hidden lg:flex absolute lg:static w-full left-0 px-6 lg:px-0 z-2" style="top:120px">
         <ul class="list-none p-0 m-0 flex lg:align-items-center select-none flex-column lg:flex-row cursor-pointer">
           <li>
-            <a (click)="router.navigate(['/landing'], {fragment: 'home'})" pRipple class="flex m-0 md:ml-5 px-0 py-3 text-900 font-medium line-height-3">
+            <a href="#home" pRipple class="flex m-0 md:ml-5 px-0 py-3 text-900 font-medium line-height-3">
               <span>Home</span>
             </a>
           </li>
           <li>
-            <a (click)="router.navigate(['/landing'], {fragment: 'features'})" pRipple class="flex m-0 md:ml-5 px-0 py-3 text-900 font-medium line-height-3">
-              <span>Features</span>
+            <a href="#varieties"  pRipple class="flex m-0 md:ml-5 px-0 py-3 text-900 font-medium line-height-3">
+              <span>Our varieties</span>
             </a>
           </li>
           <li>
@@ -73,9 +73,9 @@
       </div>
     </div>
 
-    <div class="col-12">
+    <div id="varieties" class="col-12">
         <div class="col-12 text-center mt-6 mb-2">
-          <h2 class="text-900 font-normal mb-2">Our Specialies</h2>
+          <h2 class="text-900 font-normal mb-2">Our Varieties</h2>
         </div>
         <p-carousel [value]="products" [numVisible]="3" [numScroll]="3" [circular]="false" [responsiveOptions]="carouselResponsiveOptions">
           <ng-template let-product pTemplate="item">
